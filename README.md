@@ -6,6 +6,8 @@ Create a `.env` file in the project directory with the following:
 
 REACT_APP_API_KEY={USE_GH_TOKEN_PROVIDED}
 
+[section for adding environment variables](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used)
+
 In the project directory, you can run:
 
 ### `npm install`
