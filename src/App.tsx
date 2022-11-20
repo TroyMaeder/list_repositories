@@ -4,7 +4,6 @@ const App = () => {
   return (
     <>
       <Table />
-      <div className="App">some text.....</div>)
     </>
   );
 };
