@@ -1,4 +1,4 @@
-![Screenshot 2022-11-20 at 18 12 22](https://user-images.githubusercontent.com/11822716/202919939-00021013-ff35-4b25-9512-c1da5a86f135.png)
+![Screenshot 2022-11-20 at 18 42 09](https://user-images.githubusercontent.com/11822716/202919991-06778e3d-7698-4efb-af41-26e94ccd7bfc.png)
 
 ### Steps to run project
 
