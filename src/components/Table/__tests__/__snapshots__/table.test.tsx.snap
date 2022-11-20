@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should render correct markup 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root css-rqglhn-MuiTable-root"
+    >
+      <tbody
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            aria-hidden="true"
+            class="css-1dqonpg"
+          >
+             - 
+          </td>
+          <td
+            class="css-1dqonpg"
+          >
+            <a
+              href="https://github.com/undefined/readmes-for-founders-and-coders"
+              style="text-decoration: none;"
+            >
+              readmes-for-founders-and-coders
+            </a>
+          </td>
+          <td
+            aria-hidden="true"
+            class="css-1dqonpg"
+          >
+             - 
+          </td>
+          <td
+            aria-label="star"
+            class="css-1dqonpg"
+            role="img"
+          >
+            🌟
+          </td>
+          <td
+            class="css-1dqonpg"
+          >
+            100
+          </td>
+          <td
+            aria-hidden="true"
+            class="css-1dqonpg"
+          >
+             - 
+          </td>
+          <td
+            aria-label="fork"
+            class="css-1dqonpg"
+            role="img"
+          >
+            🍴
+          </td>
+          <td
+            class="css-1dqonpg"
+          >
+            200
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
