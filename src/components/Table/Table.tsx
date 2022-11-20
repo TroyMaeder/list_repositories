@@ -30,7 +30,10 @@ const Table: FC<Props> = ({ tableData, user }) => {
               <TableRow key={row.name}>
                 <TableCell aria-hidden="true"> - </TableCell>
                 <TableCell>
-                  <a href={`https://github.com/${user}/${row.name}`}>
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href={`https://github.com/${user}/${row.name}`}
+                  >
                     {row.name}
                   </a>
                 </TableCell>
