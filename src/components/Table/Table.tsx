@@ -7,7 +7,8 @@ import { TableRow } from "@mui/material";
 import { createRow, Row } from "../../helpers/createRow";
 
 interface Props {
-  data: Row[] | undefined;
+  tableData: Row[] | undefined;
+  user?: string;
 }
 
 const TableCell = styled("td")({
@@ -17,8 +18,8 @@ const TableCell = styled("td")({
   padding: "16px 4px",
 });
 
-const Table: FC<Props> = ({ data }) => {
-  const rows = data?.map((row) => createRow(row));
+const Table: FC<Props> = ({ tableData, user }) => {
+  const rows = tableData?.map((row) => createRow(row));
 
   return (
     <>
@@ -28,7 +29,11 @@ const Table: FC<Props> = ({ data }) => {
             {rows?.map((row) => (
               <TableRow key={row.name}>
                 <TableCell aria-hidden="true"> - </TableCell>
-                <TableCell>{row.name}</TableCell>
+                <TableCell>
+                  <a href={`https://github.com/${user}/${row.name}`}>
+                    {row.name}
+                  </a>
+                </TableCell>
                 <TableCell aria-hidden="true"> - </TableCell>
                 <TableCell role="img" aria-label="star">
                   {row.starIcon}

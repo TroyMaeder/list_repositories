@@ -5,6 +5,7 @@ import Table from "../../components/Table/Table";
 
 export interface RepositoriesQueryResponse {
   viewer: {
+    login: string;
     repositories: {
       nodes: Row[];
     };
@@ -14,7 +15,12 @@ export interface RepositoriesQueryResponse {
 const HomePage = () => {
   const { data } = useQuery<RepositoriesQueryResponse>(REPOSITORIES_QUERY);
 
-  return <Table data={data?.viewer.repositories.nodes} />;
+  return (
+    <Table
+      user={data?.viewer?.login}
+      tableData={data?.viewer.repositories.nodes}
+    />
+  );
 };
 
 export default HomePage;
