@@ -35,6 +35,7 @@ it("renders home page", async () => {
     </MockedProvider>
   );
 
+  expect(await screen.findByText("Loading...")).toBeInTheDocument();
   expect(await screen.findByText("JavaScript")).toBeInTheDocument();
   expect(await screen.findByText("123")).toBeInTheDocument();
   expect(await screen.findByText("678")).toBeInTheDocument();

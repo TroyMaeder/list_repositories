@@ -2,7 +2,7 @@
 
 # Steps to run project
 
-### Create a `.env` file in the project directory with the following:
+Create a `.env` file in the project directory with the following:
 
 REACT_APP_API_KEY={USE_GH_TOKEN_PROVIDED}
 

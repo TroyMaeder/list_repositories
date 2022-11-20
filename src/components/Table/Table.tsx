@@ -5,10 +5,12 @@ import { styled } from "@mui/system";
 import { TableContainer } from "@mui/material";
 import { TableRow } from "@mui/material";
 import { createRow, Row } from "../../helpers/createRow";
+import LoadingBoundary from "../LoadingBoundary/LoadingBoundary";
 
 interface Props {
   tableData: Row[] | undefined;
   user?: string;
+  loading: boolean;
 }
 
 const TableCell = styled("td")({
@@ -18,11 +20,11 @@ const TableCell = styled("td")({
   padding: "16px 4px",
 });
 
-const Table: FC<Props> = ({ tableData, user }) => {
+const Table: FC<Props> = ({ tableData, user, loading }) => {
   const rows = tableData?.map((row) => createRow(row));
 
   return (
-    <>
+    <LoadingBoundary loading={loading}>
       <TableContainer>
         <MUITable>
           <TableBody>
@@ -52,7 +54,7 @@ const Table: FC<Props> = ({ tableData, user }) => {
           </TableBody>
         </MUITable>
       </TableContainer>
-    </>
+    </LoadingBoundary>
   );
 };
 

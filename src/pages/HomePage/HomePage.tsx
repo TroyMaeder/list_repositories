@@ -13,10 +13,12 @@ export interface RepositoriesQueryResponse {
 }
 
 const HomePage = () => {
-  const { data } = useQuery<RepositoriesQueryResponse>(REPOSITORIES_QUERY);
+  const { data, loading } =
+    useQuery<RepositoriesQueryResponse>(REPOSITORIES_QUERY);
 
   return (
     <Table
+      loading={loading}
       user={data?.viewer?.login}
       tableData={data?.viewer.repositories.nodes}
     />
