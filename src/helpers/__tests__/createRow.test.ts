@@ -1,12 +1,4 @@
-import { createRow } from "../createRow"
-
-export interface Row {
-    name: string;
-    starIcon: string;
-    stargazerCount: number;
-    forkIcon: string;
-    forkCount: number;
-  }
+import { createRow, Row } from "../createRow"
 
 const row = {
     name: "Mock repository",
@@ -16,7 +8,15 @@ const row = {
     forkCount: 2,
 } as Row
 
+const rowData = {
+    name: "Mock repository",
+    stargazerCount: 3,
+    forkCount: 2,
+} as Row
 
-it('creates row', () => {
-    expect(createRow()).toEqual(row);
-});
+
+describe("builds table rows", () => {
+    it('creates row', () => {
+        expect(createRow(rowData)).toEqual(row);
+    });
+})
