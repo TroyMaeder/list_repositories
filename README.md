@@ -1,6 +1,6 @@
 ![Screenshot 2022-11-20 at 18 42 09](https://user-images.githubusercontent.com/11822716/202919991-06778e3d-7698-4efb-af41-26e94ccd7bfc.png)
 
-### Steps to run project
+# Steps to run project
 
 ### Create a `.env` file in the project directory with the following:
 
